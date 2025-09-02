@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Now - Iron Arena</title>
+
+  <!-- Bootstrap & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-dark text-white">
+
+  <!-- ✅ Navbar (Same as main page) -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container ms-0 ">
+            <a class="navbar-brand fw-bold p-0 ms-2 me-4 " href="./index.html"><img height="80px" src="./images/logom.PNG" alt=""></a>
+
+            <!-- Mobile toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link custom-link " href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" target="_blank" href="./membership.html">Memberships</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link custom-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">Why Flex </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item d-inline-block text-center" href="./whymyflex.html">Why My Gym</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a  class="dropdown-item text-center">About Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="./contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <!-- ✅ Join Now Form Section -->
+<section class="join-section text-white position-relative">
+  <!-- 🔹 Background Video -->
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="./images/joinvid.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- 🔹 Dark overlay -->
+  <div class="overlay"></div>
+
+  <!-- 🔹 Foreground Form Content -->
+  <div class="container position-relative z-2 py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="bg-dark rounded-4 p-5 border border-warning-subtle form-shadow-box">
+          <h2 class="text-center mb-4 fw-bold text-warning">Join Iron Arena</h2>
+          <p class="text-center text-light mb-4">Your fitness journey starts here. Fill in your details and we’ll get back to you!</p>
+
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label text-warning">Full Name</label>
+              <input type="text" class="form-control bg-black text-white border-warning" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label text-warning">Email address</label>
+              <input type="email" class="form-control bg-black text-white border-warning" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="phone" class="form-label text-warning">Phone Number</label>
+              <input type="tel" class="form-control bg-black text-white border-warning" id="phone" placeholder="Enter your number" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="plan" class="form-label text-warning">Select Plan</label>
+              <select class="form-select bg-black text-white border-warning" id="plan">
+                <option value="elite">Iron Elite - ₹1,999/month</option>
+                <option value="classic">Classic - ₹999/month</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label text-warning">Message</label>
+              <textarea class="form-control bg-black text-white border-warning" id="message" rows="4" placeholder="Optional message..."></textarea>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-warning btn-glow px-5 rounded-pill mt-2">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ✅ Footer (Same as main page) -->
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-md-left">
+      <div class="row text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase fw-bold" style="color: gold;">IRON ARENA</h5>
+          <p>Your transformation starts here. Premium equipment, expert guidance, and community-driven fitness.</p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase fw-bold" style="color: gold;">Quick Links</h5>
+          <p><a href="index.html" class="text-white text-decoration-none">Home</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Facilities</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Membership</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Contact</a></p>
+        </div>
+
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase fw-bold" style="color: gold;">Contact</h5>
+          <p><i class="bi bi-envelope-fill me-2"></i>info@ironarena.com</p>
+          <p><i class="bi bi-telephone-fill me-2"></i>+91-9876543210</p>
+          <p><i class="bi bi-geo-alt-fill me-2"></i>Dwarka, New Delhi</p>
+        </div>
+
+        <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase fw-bold" style="color: gold;">Follow Us</h5>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <hr class="my-4" style="border-color: #666;" />
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="mb-0 text-muted">&copy; 2025 IRON ARENA. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
